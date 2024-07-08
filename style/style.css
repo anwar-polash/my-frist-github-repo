@@ -18,6 +18,9 @@ text-primary {
 /* nav style */
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 200px;
 }
 .nav_tittle {
   color: var(--Dark-01, #181818);
@@ -34,4 +37,32 @@ nav {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--Dark-02, #474747);
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav ul li a button {
+  width: 9.375rem;
+  height: 4rem;
+  background-color: #fd6e0a;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 0.3125rem;
 }
